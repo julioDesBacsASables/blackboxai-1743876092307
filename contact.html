@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | <!-- Site Title --></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .contact-hero {
+            background-image: url('https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">
+                    <span class="text-blue-600">Your</span>Logo
+                </a>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="content.html" class="text-gray-800 hover:text-blue-600">Content</a>
+                    <a href="contact.html" class="text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero h-64 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div class="text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">
+                Get In Touch
+            </h1>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                    Send Us a Message
+                </h2>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                    Contact Information
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Our Location</h3>
+                            <p class="text-gray-600">
+                                123 Business Avenue<br>
+                                City, State 10001<br>
+                                Country
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Phone Numbers</h3>
+                            <p class="text-gray-600">
+                                Main: +1 (555) 123-4567<br>
+                                Support: +1 (555) 765-4321
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Email Addresses</h3>
+                            <p class="text-gray-600">
+                                info@yoursite.com<br>
+                                support@yoursite.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Business Hours</h3>
+                            <p class="text-gray-600">
+                                Monday - Friday: 9am - 5pm<br>
+                                Saturday: 10am - 2pm<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="mt-8 bg-gray-200 rounded-lg overflow-hidden">
+                    <div id="map">
+                        <!-- Google Maps embed would go here -->
+                        <p class="text-center py-12 text-gray-500">
+                            [Google Maps Embed Placeholder]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">
+                        YourSiteName
+                    </h3>
+                    <p class="text-gray-400">
+                        A brief description of your site's purpose.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="content.html" class="text-gray-400 hover:text-white">Content</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>
+                    &copy; <span id="year">2023</span> YourSiteName. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
