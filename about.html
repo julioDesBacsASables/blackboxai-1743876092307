@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | <!-- Site Title --></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .about-hero {
+            background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section (Same as index.html) -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">
+                    <span class="text-blue-600">Your</span>Logo
+                </a>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-blue-600 font-medium">About</a>
+                    <a href="content.html" class="text-gray-800 hover:text-blue-600">Content</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero h-64 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div class="text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">
+                About Our Organization
+            </h1>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                Our Story
+            </h2>
+            <p class="text-gray-600 mb-8">
+                <!-- About content placeholder -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+            </p>
+            
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                Our Mission
+            </h2>
+            <p class="text-gray-600 mb-8">
+                <!-- Mission statement placeholder -->
+                Suspendisse in orci enim. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+                        John Doe
+                    </h3>
+                    <p class="text-blue-600 text-center mb-4">
+                        Founder & CEO
+                    </p>
+                    <p class="text-gray-600 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+                        Jane Smith
+                    </h3>
+                    <p class="text-blue-600 text-center mb-4">
+                        Creative Director
+                    </p>
+                    <p class="text-gray-600 text-center">
+                        Nullam in dui mauris. Vivamus hendrerit arcu sed erat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (Same as index.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">
+                        YourSiteName
+                    </h3>
+                    <p class="text-gray-400">
+                        A brief description of your site's purpose.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="content.html" class="text-gray-400 hover:text-white">Content</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>
+                    &copy; <span id="year">2023</span> YourSiteName. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
