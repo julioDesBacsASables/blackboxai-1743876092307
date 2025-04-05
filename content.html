@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content | <!-- Site Title --></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .content-hero {
+            background-image: url('https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">
+                    <span class="text-blue-600">Your</span>Logo
+                </a>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="content.html" class="text-blue-600 font-medium">Content</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content Hero Section -->
+    <section class="content-hero h-64 flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div class="text-center px-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">
+                Our Content Collection
+            </h1>
+        </div>
+    </section>
+
+    <!-- Content Filter Section -->
+    <section class="bg-white py-8 shadow-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-semibold text-gray-800">
+                        Showing 12 items
+                    </h2>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="relative">
+                        <select class="block appearance-none bg-gray-100 border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option>All Categories</option>
+                            <option>Category 1</option>
+                            <option>Category 2</option>
+                            <option>Category 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <select class="block appearance-none bg-gray-100 border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option>Sort By</option>
+                            <option>Newest First</option>
+                            <option>Oldest First</option>
+                            <option>Most Popular</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Content Item 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3761507/pexels-photo-3761507.jpeg" alt="Content image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-blue-600 font-medium">Category 1</span>
+                        <span class="text-sm text-gray-500">Jan 15, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        Content Title Example 1
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Brief description of this content item. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <span class="text-gray-500 text-sm">
+                            <i class="fas fa-eye mr-1"></i> 1.2k
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Item 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3761507/pexels-photo-3761507.jpeg" alt="Content image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-blue-600 font-medium">Category 2</span>
+                        <span class="text-sm text-gray-500">Feb 28, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        Content Title Example 2
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Brief description of this content item. Nullam in dui mauris. Vivamus hendrerit arcu sed erat.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <span class="text-gray-500 text-sm">
+                            <i class="fas fa-eye mr-1"></i> 2.4k
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Item 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="https://images.pexels.com/photos/3761507/pexels-photo-3761507.jpeg" alt="Content image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-blue-600 font-medium">Category 3</span>
+                        <span class="text-sm text-gray-500">Mar 5, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        Content Title Example 3
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Brief description of this content item. Phasellus molestie magna non est bibendum non venenatis.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <span class="text-gray-500 text-sm">
+                            <i class="fas fa-eye mr-1"></i> 3.1k
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="col-span-full mt-12">
+                <div class="flex justify-center space-x-2">
+                    <a href="#" class="px-4 py-2 border rounded-md text-blue-600 border-blue-600 hover:bg-blue-50">Previous</a>
+                    <a href="#" class="px-4 py-2 border rounded-md bg-blue-600 text-white">1</a>
+                    <a href="#" class="px-4 py-2 border rounded-md text-blue-600 hover:bg-blue-50">2</a>
+                    <a href="#" class="px-4 py-2 border rounded-md text-blue-600 hover:bg-blue-50">3</a>
+                    <span class="px-4 py-2">...</span>
+                    <a href="#" class="px-4 py-2 border rounded-md text-blue-600 hover:bg-blue-50">8</a>
+                    <a href="#" class="px-4 py-2 border rounded-md text-blue-600 border-blue-600 hover:bg-blue-50">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">
+                        Jules le big boss
+                    </h3>
+                    <p class="text-gray-400">
+                        Mael est nul au squat.
+                    </p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="content.html" class="text-white">Content</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>
+                    &copy; <span id="year">2023</span> YourSiteName. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
